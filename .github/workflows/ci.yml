@@ -13,5 +13,5 @@ jobs:
       - run: uv run pytest -q
       - run: uv run python -m src.lead_scoring
       - run: uv run python -m src.tablero_decision
-      - name: Los resultados publicados se reproducen
-        run: git diff --exit-code publicado/
+      - name: El lead scoring se reproduce igual (el otro cambia cuando el observatorio publica datos nuevos)
+        run: git diff --exit-code publicado/lead_scoring.json
