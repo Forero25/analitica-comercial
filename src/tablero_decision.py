@@ -113,6 +113,7 @@ def main() -> None:
             "min_contratos_top": int(dec["contratos"].min()), "mediana_contratos_top": float(dec["contratos"].median()),
             "con_menos_de_30_contratos": int((dec["contratos"] < MIN_CONTRATOS_AJUSTE).sum()),
             "pct_mediano_top": round(float(dec["pct"].median()), 4),
+            "con_100_pct": int((dec["pct"] == 1).sum()),
             "contratos_cubiertos": int(dec["contratos"].sum()),
             "exceso_cubierto": round(float(dec["exceso"].clip(lower=0).sum() / total_exceso), 4),
         },
