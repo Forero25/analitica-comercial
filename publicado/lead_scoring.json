@@ -1,0 +1,403 @@
+{
+ "fuente": "Bank Marketing (Moro, Cortez y Rita, 2014), UCI Machine Learning Repository, CC BY 4.0",
+ "llamadas": 41188,
+ "ventas": 4640,
+ "meses_de_campana": 26,
+ "periodos": {
+  "entrenamiento": 30430,
+  "calibracion": 5794,
+  "prueba": 4964,
+  "meses_prueba": 16
+ },
+ "tasa_de_compra": {
+  "entrenamiento": 0.0627,
+  "calibracion": 0.0904,
+  "prueba": 0.445
+ },
+ "modelos": {
+  "orden_de_llegada": {
+   "nombre": "Orden de llegada",
+   "auc_por_mes": 0.4922,
+   "captura": [
+    {
+     "capacidad": 0.05,
+     "llamadas": 248,
+     "ventas": 93,
+     "parte_de_las_ventas": 0.0421,
+     "tasa": 0.375,
+     "llamadas_por_venta": 2.6667
+    },
+    {
+     "capacidad": 0.1,
+     "llamadas": 496,
+     "ventas": 189,
+     "parte_de_las_ventas": 0.0856,
+     "tasa": 0.381,
+     "llamadas_por_venta": 2.6243
+    },
+    {
+     "capacidad": 0.2,
+     "llamadas": 993,
+     "ventas": 400,
+     "parte_de_las_ventas": 0.1811,
+     "tasa": 0.4028,
+     "llamadas_por_venta": 2.4825,
+     "ic95": [
+      0.1694,
+      0.1946
+     ]
+    },
+    {
+     "capacidad": 0.3,
+     "llamadas": 1488,
+     "ventas": 609,
+     "parte_de_las_ventas": 0.2757,
+     "tasa": 0.4093,
+     "llamadas_por_venta": 2.4433
+    },
+    {
+     "capacidad": 0.5,
+     "llamadas": 2483,
+     "ventas": 1084,
+     "parte_de_las_ventas": 0.4907,
+     "tasa": 0.4366,
+     "llamadas_por_venta": 2.2906
+    }
+   ]
+  },
+  "regla_de_vendedor": {
+   "nombre": "Regla: primero quien ya compró",
+   "auc_por_mes": 0.6214,
+   "captura": [
+    {
+     "capacidad": 0.05,
+     "llamadas": 248,
+     "ventas": 177,
+     "parte_de_las_ventas": 0.0801,
+     "tasa": 0.7137,
+     "llamadas_por_venta": 1.4011
+    },
+    {
+     "capacidad": 0.1,
+     "llamadas": 496,
+     "ventas": 346,
+     "parte_de_las_ventas": 0.1566,
+     "tasa": 0.6976,
+     "llamadas_por_venta": 1.4335
+    },
+    {
+     "capacidad": 0.2,
+     "llamadas": 993,
+     "ventas": 657,
+     "parte_de_las_ventas": 0.2974,
+     "tasa": 0.6616,
+     "llamadas_por_venta": 1.5114,
+     "ic95": [
+      0.2834,
+      0.3112
+     ]
+    },
+    {
+     "capacidad": 0.3,
+     "llamadas": 1488,
+     "ventas": 913,
+     "parte_de_las_ventas": 0.4133,
+     "tasa": 0.6136,
+     "llamadas_por_venta": 1.6298
+    },
+    {
+     "capacidad": 0.5,
+     "llamadas": 2483,
+     "ventas": 1290,
+     "parte_de_las_ventas": 0.584,
+     "tasa": 0.5195,
+     "llamadas_por_venta": 1.9248
+    }
+   ]
+  },
+  "logistica": {
+   "nombre": "Regresión logística",
+   "auc_por_mes": 0.6601,
+   "captura": [
+    {
+     "capacidad": 0.05,
+     "llamadas": 248,
+     "ventas": 177,
+     "parte_de_las_ventas": 0.0801,
+     "tasa": 0.7137,
+     "llamadas_por_venta": 1.4011
+    },
+    {
+     "capacidad": 0.1,
+     "llamadas": 496,
+     "ventas": 343,
+     "parte_de_las_ventas": 0.1553,
+     "tasa": 0.6915,
+     "llamadas_por_venta": 1.4461
+    },
+    {
+     "capacidad": 0.2,
+     "llamadas": 993,
+     "ventas": 668,
+     "parte_de_las_ventas": 0.3024,
+     "tasa": 0.6727,
+     "llamadas_por_venta": 1.4865,
+     "ic95": [
+      0.2885,
+      0.3144
+     ]
+    },
+    {
+     "capacidad": 0.3,
+     "llamadas": 1488,
+     "ventas": 927,
+     "parte_de_las_ventas": 0.4196,
+     "tasa": 0.623,
+     "llamadas_por_venta": 1.6052
+    },
+    {
+     "capacidad": 0.5,
+     "llamadas": 2483,
+     "ventas": 1350,
+     "parte_de_las_ventas": 0.6111,
+     "tasa": 0.5437,
+     "llamadas_por_venta": 1.8393
+    }
+   ]
+  },
+  "boosting": {
+   "nombre": "Gradient boosting",
+   "auc_por_mes": 0.6357,
+   "captura": [
+    {
+     "capacidad": 0.05,
+     "llamadas": 248,
+     "ventas": 166,
+     "parte_de_las_ventas": 0.0751,
+     "tasa": 0.6694,
+     "llamadas_por_venta": 1.494
+    },
+    {
+     "capacidad": 0.1,
+     "llamadas": 496,
+     "ventas": 306,
+     "parte_de_las_ventas": 0.1385,
+     "tasa": 0.6169,
+     "llamadas_por_venta": 1.6209
+    },
+    {
+     "capacidad": 0.2,
+     "llamadas": 993,
+     "ventas": 586,
+     "parte_de_las_ventas": 0.2653,
+     "tasa": 0.5901,
+     "llamadas_por_venta": 1.6945,
+     "ic95": [
+      0.2523,
+      0.2787
+     ]
+    },
+    {
+     "capacidad": 0.3,
+     "llamadas": 1488,
+     "ventas": 886,
+     "parte_de_las_ventas": 0.4011,
+     "tasa": 0.5954,
+     "llamadas_por_venta": 1.6795
+    },
+    {
+     "capacidad": 0.5,
+     "llamadas": 2483,
+     "ventas": 1314,
+     "parte_de_las_ventas": 0.5948,
+     "tasa": 0.5292,
+     "llamadas_por_venta": 1.8896
+    }
+   ]
+  }
+ },
+ "auc_con_macro": {
+  "division_al_azar": 0.7874,
+  "division_temporal": 0.5942
+ },
+ "coeficientes_logistica": [
+  {
+   "variable": "job_student",
+   "efecto": 2.313
+  },
+  {
+   "variable": "contact_telephone",
+   "efecto": 0.512
+  },
+  {
+   "variable": "job_retired",
+   "efecto": 1.898
+  },
+  {
+   "variable": "default_unknown",
+   "efecto": 0.594
+  },
+  {
+   "variable": "job_housemaid",
+   "efecto": 0.659
+  },
+  {
+   "variable": "poutcome_nonexistent",
+   "efecto": 0.708
+  },
+  {
+   "variable": "poutcome_failure",
+   "efecto": 0.722
+  },
+  {
+   "variable": "day_of_week_mon",
+   "efecto": 0.726
+  },
+  {
+   "variable": "marital_divorced",
+   "efecto": 0.734
+  },
+  {
+   "variable": "marital_married",
+   "efecto": 0.737
+  }
+ ],
+ "lista_del_dia": [
+  {
+   "prioridad": 1,
+   "lead": "L-36368",
+   "veces_el_promedio": 5.5,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "ocupación: estudiante",
+    "pocas llamadas en esta campaña"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 2,
+   "lead": "L-36245",
+   "veces_el_promedio": 5.3,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "ocupación: estudiante",
+    "pocas llamadas en esta campaña"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 3,
+   "lead": "L-36295",
+   "veces_el_promedio": 4.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "ocupación: jubilado",
+    "pocas llamadas en esta campaña"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 4,
+   "lead": "L-36779",
+   "veces_el_promedio": 4.5,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "ocupación: jubilado"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 5,
+   "lead": "L-36626",
+   "veces_el_promedio": 4.0,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": true
+  },
+  {
+   "prioridad": 6,
+   "lead": "L-36540",
+   "veces_el_promedio": 3.8,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": true
+  },
+  {
+   "prioridad": 7,
+   "lead": "L-36589",
+   "veces_el_promedio": 3.8,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 8,
+   "lead": "L-36414",
+   "veces_el_promedio": 3.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 9,
+   "lead": "L-36588",
+   "veces_el_promedio": 3.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": false
+  },
+  {
+   "prioridad": 10,
+   "lead": "L-36412",
+   "veces_el_promedio": 3.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": true
+  },
+  {
+   "prioridad": 11,
+   "lead": "L-36660",
+   "veces_el_promedio": 3.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": true
+  },
+  {
+   "prioridad": 12,
+   "lead": "L-36606",
+   "veces_el_promedio": 3.6,
+   "por_que": [
+    "ya fue contactado en otra campaña",
+    "pocas llamadas en esta campaña",
+    "menor edad"
+   ],
+   "compro": true
+  }
+ ],
+ "lista_info": {
+  "leads_del_mes": 715,
+  "ventas_del_mes": 264,
+  "ventas_en_la_lista": 5
+ }
+}

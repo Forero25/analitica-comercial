@@ -1,0 +1,39 @@
+{
+ "fuente": "Observatorio de contratación pública (SECOP II, datos.gov.co), CC BY-SA 4.0",
+ "anio": 2025,
+ "alcaldias": 558,
+ "contratos": 219199,
+ "mediana_pct_directa": 0.8013,
+ "beta": {
+  "a": 5.183,
+  "b": 1.58,
+  "contratos_equivalentes": 6.8
+ },
+ "tablero": {
+  "min_contratos_top": 1,
+  "mediana_contratos_top": 43.0,
+  "con_menos_de_30_contratos": 9,
+  "con_100_pct": 10,
+  "contratos_cubiertos": 16644,
+  "exceso_cubierto": 0.1503
+ },
+ "decision": {
+  "min_contratos_top": 1494,
+  "mediana_contratos_top": 2942.0,
+  "con_menos_de_30_contratos": 0,
+  "pct_mediano_top": 0.9584,
+  "contratos_cubiertos": 73507,
+  "exceso_cubierto": 0.5762
+ },
+ "en_ambas_listas": 6,
+ "persistencia_un_anio": {
+  "tablero": 3,
+  "decision": 17,
+  "de": 20
+ },
+ "correlacion_entre_anios": {
+  "pct_crudo": 0.854,
+  "pct_encogido": 0.84,
+  "alcaldias_en_ambos_anios": 481
+ }
+}

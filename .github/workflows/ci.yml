@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run pytest -q
+      - run: uv run python -m src.lead_scoring
+      - run: uv run python -m src.tablero_decision
+      - name: Los resultados publicados se reproducen
+        run: git diff --exit-code publicado/
